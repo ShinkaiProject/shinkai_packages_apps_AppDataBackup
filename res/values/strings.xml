@@ -131,4 +131,14 @@
 
     <string name="processing_title">Processing</string>
     <string name="progress_list_header">%1$d / %2$d done</string>
+
+    <!-- Dashboard -->
+    <string name="name_dashboard">Backup</string>
+    <string name="device">Device</string>
+    <string name="backup_now">Back Up now</string>
+    <string name="description">Backup And Restore Your App And Data</string>
+    <string name="backup_details">Backup Details</string>
+    <string name="backup">Backup</string>
+    <string name="active">Active</string>
+    <string name="inactive">Inactive</string>
 </resources>

@@ -1,0 +1,136 @@
+<!-- 
+     Copyright (C) 2026 VoltageOS
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+ -->
+ <resources>
+    <string name="app_name">Cadangkan Data Aplikasi</string>
+    <string name="tab_apps">Aplikasi</string>
+    <string name="tab_backups">Cadangan</string>
+    <string name="backup_selected">Cadangkan yang dipilih</string>
+    <string name="restore">Pulihkan</string>
+    <string name="verify">Verifikasi</string>
+    <string name="delete">Hapus</string>
+    <string name="backup_complete">Pencadangan selesai</string>
+    <string name="restore_complete">Pemulihan selesai - buka ulang aplikasi</string>
+    <string name="cancel">Batal</string>
+    <string name="select_at_least_one">Pilih setidaknya satu aplikasi</string>
+    <string name="confirm_restore_title">Pulihkan %1$s?</string>
+    <string name="confirm_restore_message">Ini akan menginstal ulang APK dan menimpa semua data aplikasi.\nAplikasi akan dihentikan paksa selama proses pemulihan.</string>
+    <string name="confirm_delete_title">Hapus cadangan?</string>
+    <string name="confirm_delete_message">Hapus cadangan %1$s?\nTindakan ini tidak dapat dibatalkan.</string>
+    <string name="backup_headline">Cadangkan aplikasi Anda</string>
+    <string name="backup_subheadline">Ambil snapshot aplikasi beserta datanya, lalu pulihkan kapan saja.</string>
+    <string name="summary_empty_count">Tidak ada aplikasi yang dipilih</string>
+    <string name="summary_empty_size">Pilih aplikasi untuk dicadangkan</string>
+    <string name="summary_count">%1$d aplikasi dipilih</string>
+    <string name="summary_count_one">1 aplikasi dipilih</string>
+    <string name="summary_size">Sekitar %1$s untuk diarsipkan</string>
+    <string name="chip_exclude_cache">Kecualikan cache</string>
+    <string name="action_select_all">Pilih semua</string>
+    <string name="action_clear">Bersihkan</string>
+    <string name="fab_backup_count">Cadangkan (%1$d)</string>
+    <string name="fab_restore_count">Pulihkan (%1$d)</string>
+    <string name="action_delete_selected">Hapus yang dipilih</string>
+    <string name="select_at_least_one_backup">Pilih setidaknya satu cadangan</string>
+    <string name="confirm_restore_selected_title">Pulihkan %1$d cadangan?</string>
+    <string name="confirm_delete_selected_title">Hapus %1$d cadangan?</string>
+    <string name="confirm_delete_selected_message">Cadangan yang dipilih akan dihapus secara permanen.\nTindakan ini tidak dapat dibatalkan.</string>
+    <string name="progress_installing_apk">Menginstal APK\u2026</string>
+    <string name="progress_restoring_data">Memulihkan data aplikasi\u2026</string>
+    <string name="progress_backing_up_data">Mencadangkan data aplikasi\u2026</string>
+    <string name="batch_passphrase_title">Cadangan terenkripsi dipilih</string>
+    <string name="batch_passphrase_message">Satu atau beberapa cadangan yang dipilih terenkripsi. Masukkan passphrase yang digunakan saat cadangan dibuat. Semua cadangan terenkripsi dalam batch ini harus memakai passphrase yang sama.</string>
+    <string name="passphrase_required">Passphrase diperlukan</string>
+    <string name="backup_options_title">Opsi pencadangan</string>
+    <string name="section_encryption">Enkripsi</string>
+    <string name="section_include">Sertakan</string>
+    <string name="section_retention">Retensi</string>
+    <string name="hint_passphrase">Passphrase (kosong = tanpa enkripsi)</string>
+    <string name="hint_keep">Simpan N cadangan terakhir (kosong = simpan semua)</string>
+    <string name="comp_apk">APK</string>
+    <string name="comp_app_data">Data aplikasi</string>
+    <string name="comp_de_data">Dilindungi perangkat</string>
+    <string name="comp_external">Eksternal</string>
+    <string name="select_one_component">Pilih setidaknya satu komponen</string>
+    <string name="action_back_up">Cadangkan</string>
+    <string name="content_includes">Menyertakan %1$s</string>
+    <string name="content_apk">Aplikasi (APK)</string>
+    <string name="content_app_data">Data aplikasi</string>
+    <string name="content_device_data">Data terlindungi</string>
+    <string name="content_external">Penyimpanan eksternal</string>
+    <string name="content_permissions">Izin &amp; pengaturan</string>
+    <string name="content_encrypted">Terenkripsi</string>
+    <string name="hint_passphrase_confirm">Konfirmasi passphrase</string>
+    <string name="passphrase_mismatch">Passphrase tidak cocok</string>
+    <string name="hint_search">Cari aplikasi</string>
+    <string name="action_sort">Urutkan</string>
+    <string name="sort_by_name">Diurutkan berdasarkan nama</string>
+    <string name="sort_by_size">Diurutkan berdasarkan ukuran</string>
+    <string name="last_backup">Cadangan terakhir: %1$s</string>
+    <string name="last_backup_never">Belum pernah dicadangkan</string>
+    <string name="backup_opt_out">Tidak ikut dicadangkan</string>
+    <string name="not_enough_space_title">Ruang tidak cukup</string>
+    <string name="not_enough_space_message">Aplikasi yang dipilih membutuhkan sekitar %1$s, tetapi hanya %2$s yang tersedia.</string>
+    <string name="backup_anyway">Tetap cadangkan</string>
+    <string name="restore_downgrade_warning">Lebih lama dari versi yang terpasang: %1$s</string>
+    <string name="verify_all">Verifikasi semua</string>
+    <string name="verify_failed_badge">Verifikasi gagal</string>
+    <string name="verify_all_message">Memverifikasi checksum setiap cadangan. Masukkan passphrase untuk menyertakan cadangan terenkripsi, atau biarkan kosong untuk melewatinya.</string>
+    <string name="verify_all_result">%1$d valid \u00b7 %2$d gagal \u00b7 %3$d dilewati</string>
+    <string name="deleted_backup">%1$s dihapus</string>
+    <string name="undo">Urungkan</string>
+    <string name="export">Ekspor</string>
+    <string name="export_message">Salin cadangan %1$s ke folder Download Anda?</string>
+    <string name="export_done">Disimpan ke %1$s</string>
+    <string name="export_failed">Ekspor gagal</string>
+    <string name="overview_section_title">Ringkasan</string>
+    <string name="overview_last_backup_title">Cadangan terakhir</string>
+    <string name="overview_last_backup_none">Belum ada cadangan</string>
+    <string name="overview_last_backup_summary">%1$d aplikasi dicadangkan</string>
+    <string name="overview_last_backup_summary_one">1 aplikasi dicadangkan</string>
+    <string name="overview_last_backup_time">Terbaru: %1$s</string>
+    <string name="overview_storage_title">Penyimpanan</string>
+    <string name="overview_storage_used">%1$d%% terpakai (%2$s / %3$s)</string>
+    <string name="overview_storage_backup_used">%1$d%% terpakai oleh cadangan (%2$s / %3$s)</string>
+    <string name="quick_actions_section_title">Aksi cepat</string>
+    <string name="quick_action_backup_apps">Cadangkan aplikasi</string>
+    <string name="quick_action_backup_apps_desc">Pilih aplikasi untuk di-snapshot</string>
+    <string name="quick_action_restore">Pulihkan</string>
+    <string name="quick_action_restore_desc">Jelajahi dan pulihkan cadangan</string>
+    <string name="section_already_backed_up">Sudah dicadangkan (%1$d)</string>
+    <string name="section_not_backed_up">Belum dicadangkan (%1$d)</string>
+    <string name="result_title_backup_success">Pencadangan berhasil!</string>
+    <string name="result_title_backup_partial">Pencadangan selesai dengan kesalahan</string>
+    <string name="result_title_restore_success">Pemulihan berhasil!</string>
+    <string name="result_title_restore_partial">Pemulihan selesai dengan kesalahan</string>
+    <string name="result_subtitle_backup">%1$d aplikasi dicadangkan</string>
+    <string name="result_subtitle_backup_one">1 aplikasi dicadangkan</string>
+    <string name="result_subtitle_restore">%1$d aplikasi dipulihkan</string>
+    <string name="result_subtitle_restore_one">1 aplikasi dipulihkan</string>
+    <string name="result_subtitle_with_failures">%1$d berhasil \u00b7 %2$d gagal</string>
+    <string name="result_view_details">Lihat detail</string>
+    <string name="result_done">Selesai</string>
+    <string name="processing_title">Memproses</string>
+    <string name="progress_list_header">%1$d / %2$d selesai</string>
+
+    <!-- Dashboard -->
+    <string name="name_dashboard">Pencadangan</string>
+    <string name="device">Perangkat</string>
+    <string name="backup_now">Cadangkan Sekarang</string>
+    <string name="description">Cadangkan Dan Pulihkan Aplikasi Dan Data Milikmu</string>
+    <string name="backup_details">Detail Cadangan</string>
+    <string name="backup">Cadangkan</string>
+    <string name="active">Aktif</string>
+    <string name="inactive">Nonaktif</string>
+</resources>

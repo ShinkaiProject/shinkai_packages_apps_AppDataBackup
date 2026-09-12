@@ -14,7 +14,7 @@
         android:layout_height="?attr/actionBarSize"
         android:background="@android:color/transparent"
         app:navigationIcon="?attr/homeAsUpIndicator"
-        app:title="Backup"
+        app:title="@string/name_dashboard"
         app:titleTextAppearance="?attr/textAppearanceHeadlineMedium"
         app:titleTextColor="?attr/colorOnSurface" />
 
@@ -69,7 +69,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginStart="16dp"
-                            android:text="Device"
+                            android:text="@string/device"
                             android:textAppearance="?attr/textAppearanceTitleLarge"
                             android:textColor="?attr/colorOnSurface"
                             android:textStyle="bold" />
@@ -82,7 +82,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="52dp"
                         android:layout_marginTop="20dp"
-                        android:text="Back up Now"
+                        android:text="@string/backup_now"
                         android:textAppearance="?attr/textAppearanceTitleMedium"
                         android:textColor="?attr/colorOnPrimary"
                         app:backgroundTint="?attr/colorPrimary"
@@ -96,7 +96,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
-                android:text="Back up and restore your data quickly and easily"
+                android:text="@string/description"
                 android:textAppearance="?attr/textAppearanceBodyMedium"
                 android:textColor="?attr/colorOnSurfaceVariant" />
 
@@ -105,7 +105,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="32dp"
                 android:layout_marginBottom="12dp"
-                android:text="Backup Details"
+                android:text="@string/backup_details"
                 android:textAppearance="?attr/textAppearanceLabelLarge"
                 android:textColor="?attr/colorOnSurfaceVariant" />
 
@@ -152,7 +152,7 @@
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:text="Backup"
+                                android:text="@string/backup"
                                 android:textAppearance="?attr/textAppearanceTitleMedium"
                                 android:textColor="?attr/colorOnSurface"
                                 android:textStyle="bold" />
@@ -162,7 +162,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="2dp"
-                                android:text="Active"
+                                android:text="@string/active"
                                 android:textAppearance="?attr/textAppearanceBodySmall"
                                 android:textColor="?attr/colorOnSurfaceVariant" />
                         </LinearLayout>
@@ -205,7 +205,7 @@
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:text="Restore Backup"
+                                android:text="@string/restore"
                                 android:textAppearance="?attr/textAppearanceTitleMedium"
                                 android:textColor="?attr/colorOnSurface"
                                 android:textStyle="bold" />
@@ -214,7 +214,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="2dp"
-                                android:text="inactive"
+                                android:text="@string/inactive"
                                 android:textAppearance="?attr/textAppearanceBodySmall"
                                 android:textColor="?attr/colorOnSurfaceVariant" />
                         </LinearLayout>
