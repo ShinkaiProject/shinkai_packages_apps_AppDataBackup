@@ -111,7 +111,6 @@ fun ProgressOverlay(
                     color = colors.onSurfaceVariant,
                 )
                 Box(modifier = Modifier.size(112.dp), contentAlignment = Alignment.Center) {
-                    WavyCircularProgressIndicator(modifier = Modifier.fillMaxSize())
                     if (current != null) {
                         AppIcon(packageName = current.packageName, label = current.label, size = 56.dp)
                     } else {
