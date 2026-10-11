@@ -141,4 +141,58 @@
     <string name="backup">Backup</string>
     <string name="active">Active</string>
     <string name="inactive">Inactive</string>
+
+    <!-- Compose UI -->
+    <string name="cd_back">Back</string>
+    <string name="cd_clear_search">Clear search</string>
+    <string name="cd_sort">Sort apps</string>
+    <string name="cd_more_actions">More actions</string>
+    <string name="status_backed_up">Backed up</string>
+    <string name="status_backed_up_on">Backed up %1$s</string>
+    <string name="status_not_backed_up">Not backed up</string>
+    <string name="status_succeeded">Succeeded</string>
+    <string name="status_failed">Failed</string>
+    <string name="version_short">v%1$s</string>
+
+    <string name="dash_status_loading">Checking backups\u2026</string>
+    <string name="dash_status_error">Couldn\u2019t read backups. Tap to retry.</string>
+    <string name="dash_backup_none">No backup yet</string>
+    <string name="dash_backup_active">Active \u2022 Last: %1$s</string>
+    <string name="dash_restore_title">Restore</string>
+    <string name="dash_restore_none">No backup available to restore</string>
+    <string name="dash_restore_count">%1$d backups available</string>
+    <string name="dash_restore_count_one">1 backup available</string>
+
+    <string name="apps_empty">No apps found</string>
+    <string name="apps_empty_search">No apps match \u201c%1$s\u201d</string>
+    <string name="backups_empty_title">No backups yet</string>
+    <string name="backups_empty_body">Back up apps from the Apps tab and they will appear here.</string>
+    <string name="state_error_title">Something went wrong</string>
+    <string name="action_retry">Retry</string>
+    <string name="backup_unavailable">The app data backup service is unavailable</string>
+
+    <string name="backup_cancelled">Backup cancelled</string>
+    <string name="restore_cancelled">Restore cancelled</string>
+    <string name="operation_cancelling">Cancelling\u2026</string>
+    <string name="progress_verifying">Verifying %1$s\u2026</string>
+    <string name="verify_encrypted_title">Verify encrypted backup</string>
+    <string name="verify_encrypted_message">This backup is encrypted. Enter its passphrase to verify.</string>
+    <string name="verify_ok">Backup verified</string>
+    <string name="verify_failed">Verification failed: %1$s</string>
+    <string name="no_backups_to_verify">There are no backups to verify</string>
+
+    <string name="result_title_backup_failed">Backup failed</string>
+    <string name="result_title_restore_failed">Restore failed</string>
+    <string name="result_title_backup_done">Backup finished</string>
+    <string name="result_title_restore_done">Restore finished</string>
+    <string name="result_no_data">No per-app result data is available for this operation.</string>
+    <string name="result_details_title">Details</string>
+    <string name="result_show_backups">Show in Backups</string>
+    <string name="result_show_apps">Show apps</string>
+    <string name="details_version">Version</string>
+    <string name="details_saved">Saved</string>
+    <string name="details_size">Size</string>
+    <string name="details_location">Location</string>
+    <string name="details_no_metadata">No backup metadata found</string>
+    <string name="dialog_close">Close</string>
 </resources>

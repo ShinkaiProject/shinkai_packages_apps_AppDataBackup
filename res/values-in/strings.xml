@@ -133,4 +133,58 @@
     <string name="backup">Cadangkan</string>
     <string name="active">Aktif</string>
     <string name="inactive">Nonaktif</string>
+
+    <!-- Compose UI -->
+    <string name="cd_back">Kembali</string>
+    <string name="cd_clear_search">Hapus pencarian</string>
+    <string name="cd_sort">Urutkan aplikasi</string>
+    <string name="cd_more_actions">Tindakan lainnya</string>
+    <string name="status_backed_up">Sudah dicadangkan</string>
+    <string name="status_backed_up_on">Dicadangkan %1$s</string>
+    <string name="status_not_backed_up">Belum dicadangkan</string>
+    <string name="status_succeeded">Berhasil</string>
+    <string name="status_failed">Gagal</string>
+    <string name="version_short">v%1$s</string>
+
+    <string name="dash_status_loading">Memeriksa cadangan\u2026</string>
+    <string name="dash_status_error">Tidak dapat membaca cadangan. Ketuk untuk mencoba lagi.</string>
+    <string name="dash_backup_none">Belum ada cadangan</string>
+    <string name="dash_backup_active">Aktif \u2022 Terakhir: %1$s</string>
+    <string name="dash_restore_title">Pulihkan</string>
+    <string name="dash_restore_none">Tidak ada cadangan untuk dipulihkan</string>
+    <string name="dash_restore_count">%1$d cadangan tersedia</string>
+    <string name="dash_restore_count_one">1 cadangan tersedia</string>
+
+    <string name="apps_empty">Tidak ada aplikasi</string>
+    <string name="apps_empty_search">Tidak ada aplikasi yang cocok dengan \u201c%1$s\u201d</string>
+    <string name="backups_empty_title">Belum ada cadangan</string>
+    <string name="backups_empty_body">Cadangkan aplikasi dari tab Aplikasi dan cadangannya akan muncul di sini.</string>
+    <string name="state_error_title">Terjadi kesalahan</string>
+    <string name="action_retry">Coba lagi</string>
+    <string name="backup_unavailable">Layanan pencadangan data aplikasi tidak tersedia</string>
+
+    <string name="backup_cancelled">Pencadangan dibatalkan</string>
+    <string name="restore_cancelled">Pemulihan dibatalkan</string>
+    <string name="operation_cancelling">Membatalkan\u2026</string>
+    <string name="progress_verifying">Memverifikasi %1$s\u2026</string>
+    <string name="verify_encrypted_title">Verifikasi cadangan terenkripsi</string>
+    <string name="verify_encrypted_message">Cadangan ini terenkripsi. Masukkan frasa sandinya untuk memverifikasi.</string>
+    <string name="verify_ok">Cadangan terverifikasi</string>
+    <string name="verify_failed">Verifikasi gagal: %1$s</string>
+    <string name="no_backups_to_verify">Tidak ada cadangan untuk diverifikasi</string>
+
+    <string name="result_title_backup_failed">Pencadangan gagal</string>
+    <string name="result_title_restore_failed">Pemulihan gagal</string>
+    <string name="result_title_backup_done">Pencadangan selesai</string>
+    <string name="result_title_restore_done">Pemulihan selesai</string>
+    <string name="result_no_data">Tidak ada data hasil per aplikasi untuk operasi ini.</string>
+    <string name="result_details_title">Detail</string>
+    <string name="result_show_backups">Lihat di Cadangan</string>
+    <string name="result_show_apps">Lihat aplikasi</string>
+    <string name="details_version">Versi</string>
+    <string name="details_saved">Disimpan</string>
+    <string name="details_size">Ukuran</string>
+    <string name="details_location">Lokasi</string>
+    <string name="details_no_metadata">Metadata cadangan tidak ditemukan</string>
+    <string name="dialog_close">Tutup</string>
 </resources>

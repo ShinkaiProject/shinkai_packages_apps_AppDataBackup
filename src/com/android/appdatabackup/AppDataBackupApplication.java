@@ -30,10 +30,11 @@ import com.google.android.material.color.DynamicColors;
  * system accent/neutral tones (colorPrimary, colorPrimaryContainer,
  * colorSecondaryContainer, colorTertiaryContainer, colorSurface, etc.).
  *
- * This covers {@link AppDataBackupActivity} (dashboard) and
- * {@link BackupManageActivity} (Apps / Backups tabs) automatically — no
- * per-screen changes are needed, since both already source their colors
- * through Material3 theme attributes rather than hardcoded values.
+ * The Compose UI in {@link AppDataBackupActivity} draws with its own
+ * {@code BackupTheme} (see {@code ui/theme/Theme.kt}), so this only affects
+ * the window theme behind it (window background, system bar defaults) and
+ * any remaining View-based surfaces. Wallpaper-derived colors inside Compose
+ * are opt-in through {@code BackupTheme(dynamicColor = true)}.
  *
  * On devices below Android 12 (API 31), or if dynamic colors are
  * unavailable, this is a no-op and the static {@code md_*} palette in

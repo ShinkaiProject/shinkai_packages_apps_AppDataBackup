@@ -14,7 +14,10 @@
 
 android_app {
     name: "AppDataBackup",
-    srcs: ["src/**/*.java"],
+    srcs: [
+        "src/**/*.java",
+        "src/**/*.kt",
+    ],
     resource_dirs: ["res"],
     manifest: "AndroidManifest.xml",
     platform_apis: true,
@@ -24,9 +27,28 @@ android_app {
     ],
     certificate: "platform",
     static_libs: [
-        "androidx.recyclerview_recyclerview",
-        "androidx.viewpager2_viewpager2",
-        "androidx.coordinatorlayout_coordinatorlayout",
+        // Still needed for Theme.Material3.* (res/values/themes.xml) and
+        // DynamicColors in AppDataBackupApplication.
         "com.google.android.material_material",
+
+        // Jetpack Compose UI. These module names are the ones AOSP's own
+        // Compose apps use (SystemUI, Photopicker, Launcher3).
+        "androidx.activity_activity-compose",
+        "androidx.compose.foundation_foundation",
+        "androidx.compose.material3_material3",
+        "androidx.compose.runtime_runtime",
+        "androidx.compose.ui_ui",
+        "androidx.lifecycle_lifecycle-runtime-compose",
+        "kotlin-stdlib",
+        "kotlinx-coroutines-android",
+    ],
+
+    // Compose needs the Compose compiler plugin to transform @Composable functions.
+    // Soong attaches it automatically via Module.useCompose() (build/soong/java/base.go)
+    // whenever "androidx.compose.runtime_runtime" is in static_libs, so no `plugins`
+    // entry is needed. The sourceInformation flag matches SystemUI/Photopicker.
+    kotlincflags: [
+        "-Xjvm-default=all",
+        "-P plugin:androidx.compose.compiler.plugins.kotlin:sourceInformation=true",
     ],
 }
