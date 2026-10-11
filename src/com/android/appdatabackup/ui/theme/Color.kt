@@ -20,10 +20,7 @@ import androidx.compose.material3.darkColorScheme
 import androidx.compose.material3.lightColorScheme
 import androidx.compose.ui.graphics.Color
 
-// Brand palette: near-black canvas, muted dark-green surfaces, mint accents.
-// All pairs below were chosen for at least 4.5:1 text contrast (7:1 for body text on cards).
-
-internal val DarkBackupColors = darkColorScheme(
+internal val AmoledBackupColors = darkColorScheme(
     primary = Color(0xFF7CE3B0),
     onPrimary = Color(0xFF00382A),
     primaryContainer = Color(0xFF1E4D38),
@@ -60,6 +57,27 @@ internal val DarkBackupColors = darkColorScheme(
     surfaceContainer = Color(0xFF15211A),
     surfaceContainerHigh = Color(0xFF1B2A21),
     surfaceContainerHighest = Color(0xFF22342A),
+)
+
+/**
+ * Default dark scheme: the same mint-on-green identity as [AmoledBackupColors], but the canvas
+ * and card surfaces are lifted from near-black to a dark green-tinted gray, so it no longer
+ * reads as pure AMOLED. Only the neutral surface roles (plus the two container roles that sit
+ * on them) differ; accents and text colors are shared.
+ */
+internal val DarkBackupColors = AmoledBackupColors.copy(
+    background = Color(0xFF131A16),
+    surface = Color(0xFF131A16),
+    surfaceDim = Color(0xFF131A16),
+    surfaceBright = Color(0xFF34443B),
+    surfaceVariant = Color(0xFF33443A),
+    surfaceContainerLowest = Color(0xFF0E1411),
+    surfaceContainerLow = Color(0xFF18211C),
+    surfaceContainer = Color(0xFF1E2923),
+    surfaceContainerHigh = Color(0xFF26332C),
+    surfaceContainerHighest = Color(0xFF2E3D35),
+    secondaryContainer = Color(0xFF2C4A38),
+    outlineVariant = Color(0xFF435A4C),
 )
 
 internal val LightBackupColors = lightColorScheme(

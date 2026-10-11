@@ -24,26 +24,18 @@ import androidx.compose.material3.dynamicLightColorScheme
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.platform.LocalContext
 
-/**
- * Central theme for every screen.
- *
- * [dynamicColor] is off by default so the app keeps its mint-on-near-black identity; turn it
- * on to follow the wallpaper (Monet) palette instead. This theme deliberately uses only
- * stable Material 3 APIs: the Material 3 Expressive theme and components are still marked
- * experimental in the Compose Material 3 release this tree may carry, so the expressive look
- * comes from shapes, typography, color roles and spring motion instead.
- */
 @Composable
 fun BackupTheme(
     darkTheme: Boolean = isSystemInDarkTheme(),
     dynamicColor: Boolean = false,
+    pureBlack: Boolean = false,
     content: @Composable () -> Unit,
 ) {
     val context = LocalContext.current
     val colorScheme = when {
         dynamicColor && Build.VERSION.SDK_INT >= Build.VERSION_CODES.S ->
             if (darkTheme) dynamicDarkColorScheme(context) else dynamicLightColorScheme(context)
-        darkTheme -> DarkBackupColors
+        darkTheme -> if (pureBlack) AmoledBackupColors else DarkBackupColors
         else -> LightBackupColors
     }
     MaterialTheme(
